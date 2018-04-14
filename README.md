@@ -47,7 +47,7 @@
 - Добавим:
 ```logoutput: /var/log/socks.log
 
-internal: eth0 port = 8565
+internal: eth0 port = (тот же номер порта, который мы указывали в правилах групп на амазоне)
 external: eth0
 
 method: username
@@ -112,3 +112,5 @@ sleep 10
 
 - Добавим запланированный запуск
   - `@reboot /home/dante/scripts/start.sh > /dev/null 2>&1`
+
+Добавляем сокс-проксю в конфигах телеграма в десктопном клиенте.
